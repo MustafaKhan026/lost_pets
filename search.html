@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search Posts by Location</title>
+    <link rel="stylesheet" type="text/css" href="SearchPet.css">
+    <link rel="stylesheet" href="home.css">
+
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <h1>Search Posts by Location</h1>
+        </div>
+        <div class="header-right">
+            <form id="searchForm">
+                <label for="location_found">Location Found:</label>
+                <input type="text" id="location_found" name="location_found" placeholder="Enter location" required="true">
+                <input type="submit" value="Search">
+            </form>
+        </div>
+    </header>
+
+    <div id="results" class="card-grid" ></div>
+    <script src="./js/search.js"></script>
+</body>
+</html>

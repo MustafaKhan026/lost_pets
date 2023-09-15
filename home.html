@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link
+        rel="stylesheet"
+        href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    />
+    <link rel="stylesheet" href="home.css">
+    <style>
+        a{
+            text-decoration: none;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+        <header>
+            <div class="header-left">
+                <h1>FindMyPet</h1>
+            </div>
+            <div class="header-right">
+                <button class="searchButton">
+                    <a href="search.html">Search</a>
+                </button>
+                <button class="addLostPets">
+                    <a href="addlostpet.html">+ lost Pet</a>
+                </button>
+            </div>
+        </header>
+    <main>
+        <section class="card-grid" id="lost-pets-list"></section>
+        <div id="map" style="height: 400px; width: 400px; display: none;"></div>
+
+        <!-- Include Leaflet library -->
+        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    </main>
+    <script src="./js/home.js"></script>
+</body>
+</html>
