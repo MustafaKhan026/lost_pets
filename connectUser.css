@@ -1,56 +1,48 @@
-/* Reset some default margin and padding for consistency */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+body{
+    background-color: #e8bcb9;
 
-/* Style for the chat container */
+}
 .chat-container {
-    max-width: 400px;
+    width: 100%;
     margin: 0 auto;
-    background-color: #f9f9f9;
+    background-color:white;
     border: 1px solid #e1e1e1;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     overflow: hidden;
 }
-
-/* Style for the chat header */
-.chat-header {
+.chat-headerContainer {
     display: flex;
     align-items: center;
     padding: 10px;
-    background-color: #007bff; /* Blue color for header background */
+    background-color: #662549;
     color: white;
 }
 
-.profile-picture {
+.chat-picture {
     width: 40px;
     height: 40px;
     border-radius: 50%;
+    border-color: black;
     margin-right: 10px;
 }
 
-/* Style for chat username */
 h2 {
     font-size: 18px;
     font-weight: bold;
+    color: white;
 }
-
-/* Style for chat messages container */
-.chat-messages {
+.chat-messageConatiner {
     max-height: 400px;
     overflow-y: scroll;
     padding: 10px;
 }
 
-/* Style for chat input and send button */
-.chat-input {
+.chat-inputContainer {
     display: flex;
     align-items: center;
     padding: 10px;
-    background-color: #fff; /* White background for input area */
+    background-color: #fff;
 }
 
 #message-input {
@@ -61,15 +53,11 @@ h2 {
     margin-right: 10px;
 }
 
-#send-button {
-    background-color: #007bff;
+.chat-sendButton {
+    background-color: #ae445a;
     color: white;
     border: none;
     border-radius: 20px;
     padding: 10px 20px;
     cursor: pointer;
-}
-
-#send-button:hover {
-    background-color: #0056b3;
 }

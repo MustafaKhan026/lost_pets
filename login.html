@@ -4,21 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Screen</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="loginStyle.css">
 </head>
 <body>
-    <div class="login-container">
+    <div class="login-mainContainer">
         <h2>Login</h2>
         <form id="login-form">
-            <label for="username">Email:</label>
+            <label for="username" class="login-label">Email:</label>
             <input type="text" id="email" name="email" required>
             
-            <label for="password">Password:</label>
+            <label for="password" class="login-label">Password:</label>
             <input type="password" id="password" name="password" required>
             
-            <button type="button" id="signin-button">Login</button>
+            <button type="button" id="signin-button" class="loginButton">Login</button>
         </form>
-        <p>New user? <a href="register.html">Register here</a></p>
+        <p>New user? <a href="register.html" class="login-registerContainer">Register here</a></p>
 
     </div>
     <script src="./js/login.js"></script>

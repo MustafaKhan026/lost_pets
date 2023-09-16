@@ -1,48 +1,53 @@
-/* Style for the registration container */
-.registration-container {
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 20px;
-    border: 1px solid #ccc;
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e8bcb9;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.register-mainContainer {
+    background-color: white;
+    /* padding: 20px; */
+    height: 40%;
+    width: 40%;
     border-radius: 5px;
-    background-color: #f9f9f9;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
 }
 
-/* Style for labels */
-label {
+h2 {
+    margin-top: 1%;
+    color: #333;
+    margin-right: 80%;
+}
+
+.login-label {
     display: block;
-    margin-bottom: 5px;
+    margin-top: 10px;
+    font-weight: bold;
+    margin-right: 77%;
+
 }
 
-/* Style for input fields */
-input[type="text"],
-input[type="email"],
-input[type="password"] {
+input {
     width: 90%;
     padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    margin-top: 5px;
+    border: 1px solid #7c7878;
+    border-radius: 50px;
 }
 
-/* Style for the submit button */
-button[type="submit"] {
-    background-color: #007bff; /* Blue color for the button */
-    color: white;
-    padding: 10px 20px;
+.loginButton {
+    width: 95%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #f39f5a;
+    color: black;
+    font-weight: 800;
     border: none;
-    border-radius: 5px;
+    border-radius: 50px;
     cursor: pointer;
-}
-
-/* Style the submit button on hover */
-button[type="submit"]:hover {
-    background-color: #0056b3; /* Darker shade of blue on hover */
-}
-
-/* Style for error messages */
-.error-message {
-    color: red;
-    font-weight: bold;
 }

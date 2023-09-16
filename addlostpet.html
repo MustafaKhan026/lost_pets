@@ -11,50 +11,50 @@
 </head>
 <body>
     <h1>Lost Pet Form</h1>
-    <form id="lost-pet-form" enctype="multipart/form-data">
-        <label for="pet_owner_email">Owner Email:</label>
-        <input type="text" id="pet_owner_email" name="pet_owner_email" required><br><br>
-        <label for="pet_owner_contact">Owner Contact:</label>
+    <form id="lost-pet-form" enctype="multipart/form-data" class="addPet-formContainer">
+        <label for="pet_owner_email" class="addPet-labelContainer">Owner Email:</label>
+        <input type="text" id="pet_owner_email" name="pet_owner_email" required c><br><br>
+        <label for="pet_owner_contact" class="addPet-labelContainer">Owner Contact:</label>
         <input type="text" id="pet_owner_contact" name="pet_owner_contact" required><br><br>
-        <label for="date_lost">Date Lost:</label>
+        <label for="date_lost" class="addPet-labelContainer">Date Lost:</label>
         <input type="date" id="date_lost" name="date_lost" required><br>
-        <label for="time_lost">Time Lost:</label>
+        <label for="time_lost" class="addPet-labelContainer">Time Lost:</label>
         <input type="time" id="time_lost" name="time_lost" required><br>
-        <label for="pet_name">Pet Name:</label>
+        <label for="pet_name" class="addPet-labelContainer">Pet Name:</label>
         <input type="text" id="pet_name" name="pet_name" required><br>
 
-        <label for="species">Species:</label>
+        <label for="species" class="addPet-labelContainer">Species:</label>
         <input type="text" id="species" name="species" required><br>
 
-        <label for="breed">Breed:</label>
+        <label for="breed" class="addPet-labelContainer">Breed:</label>
         <input type="text" id="breed" name="breed" required><br>
 
-        <label for="age">Age:</label>
+        <label for="age" class="addPet-labelContainer">Age:</label>
         <input type="number" id="age" name="age" required><br>
 
-        <label for="weight">Weight:</label>
+        <label for="weight" class="addPet-labelContainer">Weight:</label>
         <input type="number" id="weight" name="weight" required><br>
 
-        <label for="color">Color:</label>
+        <label for="color" class="addPet-labelContainer">Color:</label>
         <input type="text" id="color" name="pet_colour" required><br>
 
-        <label for="distinguish_marks">Distinguishing Marks:</label>
+        <label for="distinguish_marks" class="addPet-labelContainer">Distinguishing Marks:</label>
         <textarea id="distinguish_marks" name="distinguish_marks" required></textarea><br>
 
-        <label for="personality">Personality:</label>
+        <label for="personality" class="addPet-labelContainer">Personality:</label>
         <textarea id="personality" name="personality" required></textarea><br>
 
-        <label for="medical_conditions">Medical Conditions:</label>
+        <label for="medical_conditions" class="addPet-labelContainer">Medical Conditions:</label>
         <textarea id="medical_conditions" name="medical_conditions" required></textarea><br>
-        <label for="last_location">Last Location:</label>
+        <label for="last_location" class="addPet-labelContainer">Last Location:</label>
         <textarea id="last_location" name="last_location" required></textarea><br>
 
-        <label for="image">Upload Image:</label>
+        <label for="image" class="addPet-labelContainer">Upload Image:</label>
         <input type="file" id="image" name="image" accept="image/*" required><br>
         <input type="hidden" id="markerLat" name="markerLat">
         <input type="hidden" id="markerLng" name="markerLng">
         <div id="map" style="height: 300px;margin-top: 5px;"></div> 
-        <button type="button" id="submit-button">Submit</button>
+        <button type="button" id="submit-button" class="addPet-submitButton">Submit</button>
     </form>
     <script src="./js/addpost.js"></script>
 </body>

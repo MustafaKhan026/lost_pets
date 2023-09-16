@@ -8,16 +8,15 @@
 </head>
 <body>
     <div class="chat-container">
-        <div class="chat-header">
-            <img src="https://w7.pngwing.com/pngs/81/570/png-transparent-profile-logo-computer-icons-user-user-blue-heroes-logo-thumbnail.png" alt="User's Profile Picture" class="profile-picture">
-            <h2>JohnDoe</h2>
+        <div class="chat-headerContainer">
+            <img src="https://w7.pngwing.com/pngs/81/570/png-transparent-profile-logo-computer-icons-user-user-blue-heroes-logo-thumbnail.png" alt="User's Profile Picture" class="chat-picture">
+            <h2>fred</h2>
         </div>
-        <div class="chat-messages" id="chat-messages">
-            <!-- Messages will be displayed here -->
+        <div class="chat-messageConatiner" id="chat-messages">
         </div>
-        <div class="chat-input">
+        <div class="chat-inputContainer">
             <input type="text" id="message-input" placeholder="Type a message...">
-            <button id="send-button">Send</button>
+            <button id="send-button" class="chat-sendButton">Send</button>
         </div>
     </div>
     <script src="connectUser.js"></script>

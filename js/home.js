@@ -1,10 +1,9 @@
-const map = L.map('map').setView([51.505, -0.09], 13); // Set the initial center and zoom level
+const map = L.map('map').setView([51.505, -0.09], 13);
 
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
             maxZoom: 19,
         }).addTo(map);
 
-        // Fetch data from the server and populate the HTML and map
         fetch('http://localhost:3030/api/lostpet/allposts')
     .then(response => response.json())
     .then(data => {
@@ -12,7 +11,6 @@ const map = L.map('map').setView([51.505, -0.09], 13); // Set the initial center
         const lostPetsList = document.getElementById('lost-pets-list');
 
         data.forEach(pet => {
-            // Create a card for each lost pet
             const card = document.createElement('div');
             card.className = 'lost-pet-card';
 
@@ -82,7 +80,9 @@ const map = L.map('map').setView([51.505, -0.09], 13); // Set the initial center
                         <button class="buttonContainer-reportButton">
                             <a href="reportPet.html?email=${pet.pet_owner_email}">Report</a>
                         </button>
-                        <button class="buttonContainer-connectButton">Connect with owner</button>
+                        <button class="buttonContainer-connectButton">
+                        <a href="connectUser.html">Connect with owner</a>
+                        </button>
                     </div>
                     
                 </div>
@@ -91,15 +91,12 @@ const map = L.map('map').setView([51.505, -0.09], 13); // Set the initial center
             ` 
             lostPetsList.appendChild(card);
 
-            // Create a map for each pet's location
             const petMap = L.map(`map-${pet._id}`).setView([pet.latitude, pet.longitude], 13);
 
             L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
                 maxZoom: 19,
             }).addTo(petMap);
-
-            // Create a marker for the pet's location
-            L.marker([pet.location.coordinates[1], pet.location.coordinates[0]])
+            L.marker([pet.latitude, pet.longitude])
                 .addTo(petMap)
                 .bindPopup(`<h2>${pet.pet_name}</h2><p>Species: ${pet.species}</p><p>Breed: ${pet.breed}</p>`);
         });

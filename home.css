@@ -1,37 +1,28 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
+    background-color: #e8bcb9;
     margin: 0;
 }
 
-header {
+.home-headerContainer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #333;
+    background-color: #1d1a39;
     color: #fff;
     padding: 10px 20px;
 }
 
-.header-left {
+.home-headerContainer-leftContainer {
     flex-grow: 1;
 }
 
-.header-right {
+.home-headerContainer-rightContainer {
     display: flex;
 }
 
-.header-button {
-    background-color: #007BFF;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    padding: 8px 16px;
-    margin-left: 10px;
-    cursor: pointer;
-}
 .addLostPets {
-    background-color: #007BFF;
+    background-color: #ae445a;
     color: white;
     border: none;
     border-radius: 5px;
@@ -41,7 +32,7 @@ header {
 }
 
 .searchButton {
-    background-color: #007BFF;
+    background-color: #ae445a;
     color: white;
     border: none;
     border-radius: 5px;
@@ -49,8 +40,11 @@ header {
     margin-left: 10px;
     cursor: pointer;
 }
-.header-button:hover {
-    background-color: #0056b3;
+.addLostPets:hover {
+    background-color: #662549;
+}
+.searchButton:hover {
+    background-color: #662549;
 }
 
 
@@ -102,7 +96,7 @@ header {
     justify-content: space-evenly;
 }
 .infoContainer-textContainer{
-    height: 20%;
+    height: 15%;
     width: 80%;
     /* background-color: #b12b69; */
     display: flex;
@@ -170,7 +164,7 @@ header {
     justify-content: space-evenly;
 }
 .buttonContainer-reportButton{
-    background-color: rgb(207, 120, 120);
+    background-color:#ae445a;
     color: rgb(0, 0, 0);
     padding: 10px 20px;
     border: none; 
@@ -178,7 +172,7 @@ header {
     cursor: pointer; 
 }
 .buttonContainer-connectButton{
-    background-color: rgb(228, 174, 105);
+    background-color: #ae445a;
     color: rgb(0, 0, 0);
     padding: 10px 20px;
     border: none; 

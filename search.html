@@ -6,20 +6,20 @@
 
 </head>
 <body>
-    <header>
-        <div class="header-left">
+    <header class="search-headerContainer">
+        <div class="search-headerContainer-leftContainer">
             <h1>Search Posts by Location</h1>
         </div>
-        <div class="header-right">
+        <div class="search-headerContainer-rightContainer">
             <form id="searchForm">
-                <label for="location_found">Location Found:</label>
+                <label for="location_found" class="search-headerContainer-labelContainer">Location Found: </label>
                 <input type="text" id="location_found" name="location_found" placeholder="Enter location" required="true">
-                <input type="submit" value="Search">
+                <input type="submit" value="Search" class="search-submitButton">
             </form>
         </div>
     </header>
 
-    <div id="results">
+    <div id="results" class="search-results">
         
     </div>
     <script src="./js/search.js"></script>

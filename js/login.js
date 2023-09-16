@@ -20,7 +20,7 @@ document.getElementById('signin-button').addEventListener('click', async () => {
             alert('Data submitted successfully!');
             const responseData = await response.json();
             console.log('Response Data:', responseData);
-            // window.location.href = 'home.html';
+            window.location.href = 'home.html';
         } else {
             alert('Error submitting data.');
             console.log("response", response);

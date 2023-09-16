@@ -54,6 +54,8 @@ const map = L.map('map').setView([0, 0], 2); // Set the initial view and zoom le
                 alert('Data submitted successfully!');
                 const responseData = await response.json();
                 console.log('Response Data:', responseData);
+                window.location.href = 'home.html';
+
             } else {
                 alert('Error submitting data.');
                 const responseData = await response.json();
