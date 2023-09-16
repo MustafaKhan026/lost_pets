@@ -28,71 +28,29 @@ function displayResults(posts) {
     }
 
     posts.forEach(pet => {
-        const postDiv = document.createElement('div');
-        postDiv.classList.add('card'); // Add a class for styling in your CSS
+        // const postDiv = document.createElement('div');
+        // postDiv.classList.add('card'); // Add a class for styling in your CSS
 
-        postDiv.innerHTML = `
+        resultsDiv.innerHTML = `
         <div class="card">
-        <div class="topContainer">
-            <div class="topContainer-imageContainer">
-                <img src=${pet.image_url} alt="${pet.pet_name}" class="imageContainer-style"/>
+        <div class="upperContainer">
+            <div class="imageContainer">
+                <img src=${pet.image_url} alt="pet image">
             </div>
-            <div class="topContainer-infoContainer">
-                <div class="infoContainer-textContainer">
-                    <h4>Name</h4>
-                    <h4>:</h4>
-                    <h4>${pet.pet_name}</h4>
-                </div>
-                <div class="infoContainer-textContainer">
-                    <h4>Species</h4>
-                    <h4>:</h4>
-                    <h4>${pet.species}</h4>
-                </div>
-                <div class="infoContainer-textContainer">
-                    <h4>Breed</h4>
-                    <h4>:</h4>
-                    <h4>${pet.breed}</h4>
-                </div>
-                <div class="infoContainer-textContainer">
-                    <h4>Color</h4>
-                    <h4>:</h4>
-                    <h4>${pet.color}</h4>
-                </div>
-                <div class="infoContainer-textContainer">
-                    <h4>Age</h4>
-                    <h4>:</h4>
-                    <h4> ${pet.age}</h4>
-                </div>
-                <div class="infoContainer-textContainer">
-                    <h4>Personality</h4>
-                    <h4>:</h4>
-                    <h4>${pet.personality}</h4>
-                </div>
+            <div class="detailsContainer">
+                <p>Breed :${pet.breed} </p>
+                <p>Species : ${pet.species} </p>
+                <p>Weight : ${pet.weight}</p>
+                <p>Color : ${pet.pet_color}</p>
             </div>
         </div>
-        <div class="middleContainer">
-            <div class="middleContainer-innerContainer">
-                <h4 class="lostLocationText">Lost location :  ${pet.last_location}</h4>
-            </div>
+        <div class="lowerContainer">
+            <p>Distinguish Marks : ${pet.distinguish_marks}</p>
+            <p>Location Found :${pet.location_found} </p>
         </div>
-        <div class="bottomContainer">
-            <div class="bottomContainer-innerContainer">
-                <div class="bottomContainer-innerContainer-textContainer">
-                    <h3>Medical Conditions</h3>
-                    <h3>:</h3>
-                    <h3> ${pet.medical_conditions}</h3>
-                </div>
-                <div class="bottomContainer-innerContainer-textContainer">
-                    <h3>Distinguish marks</h3>
-                    <h3>:</h3>
-                    <h3>${pet.distinguish_marks}</h3>
-                </div>
-                
-            </div>
-        </div>
-    </div> 
+    </div>
         `;
 
-        resultsDiv.appendChild(postDiv);
+        // resultsDiv.appendChild(postDiv);
     });
 }
