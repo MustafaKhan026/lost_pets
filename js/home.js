@@ -81,7 +81,10 @@ const map = L.map('map').setView([51.505, -0.09], 13);
                             <a href="reportPet.html?email=${pet.pet_owner_email}">Report</a>
                         </button>
                         <button class="buttonContainer-connectButton">
-                        <a href="connectUser.html">Connect with owner</a>
+                        <a href="chat.html" target="_blank">Connect with owner</a>
+                        </button>
+                        <button class="buttonContainer-connectButton">
+                        Share
                         </button>
                     </div>
                     
